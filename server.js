@@ -1,4 +1,3 @@
-const { notify } = require("./src/app");
 const app = require("./src/app");
 
 const PORT = 3055

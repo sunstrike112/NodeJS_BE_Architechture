@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "mongoose": "^7.0.3"
+  },
   "scripts": {
     "start": "nodemon app.js",
     "server": "nodemon server.js",
