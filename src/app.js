@@ -18,13 +18,7 @@ const{ checkOverload } = require('./helpers/check.connect')
 checkOverload()
 
 // Init routes
-app.get('/', (req, res, next) => {
-  const strCompress = 'Hello Fnfan'
-  return res.status(200).json({
-    message: 'Welcom FanTipJS',
-    metadata: strCompress.repeat(10000)
-  })
-})
+app.use('/', require('./routes'))
 
 // Handling errror
 
