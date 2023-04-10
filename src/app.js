@@ -13,6 +13,8 @@ app.use(compression())
 // Init DB
 // require('./dbs/init.mongodb.lv0')
 require('./dbs/init.mongodb')
+const{ checkOverload } = require('./helpers/check.connect')
+checkOverload()
 
 // Init routes
 app.get('/', (req, res, next) => {
