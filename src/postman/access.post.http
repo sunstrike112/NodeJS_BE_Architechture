@@ -1,3 +1,11 @@
-@url_dev=http://127.0.0.1:3052/v1/api/
+@url_dev=http://127.0.0.1:3056/v1/api/
+
 ### sign up
-POST {{url_dev}}shop/signup
+POST {{url_dev}}/shop/signup
+Content-Type: application/json
+
+{
+  "name": "Shop TIPS023",
+  "email": "shoptipjs023@gmail.com",
+  "password": "123456"
+}
